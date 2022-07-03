@@ -1,42 +1,62 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  height: 100vh;
+  width: 100vw;
+  background: #6E00FF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.qrcode__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h2 {
+  margin-bottom: 1em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input__group {
+  display: flex;
+  margin-top: 2em;
+  padding: 0 2.2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  color: white;
+  font-weight: 500;
 }
 
+input {
+  width: 100%;
+  padding: 1em 0.75em;
+  border: 1px solid #1B1E23;
+  border-radius: 3px;
+  margin-bottom: 2em;
+  margin-top: 0.75em;
+}
 button {
-  font-size: calc(10px + 2vmin);
+  border: unset;
+  color: #FFF;
+  background: #2287FA;
+  padding: 1em 2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .qrcode__container {
+    flex-direction: row;
+  }
 }
