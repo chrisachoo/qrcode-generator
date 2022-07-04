@@ -23,8 +23,9 @@ img {
 }
 
 h2 {
-  margin-bottom: 1em;
+  padding: 2em 0;
   color: white;
+  text-align: center;
 }
 
 .input__group {
@@ -42,10 +43,17 @@ input {
   width: 100%;
   padding: 1em 0.75em;
   border: 1px solid #1B1E23;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-bottom: 2em;
   margin-top: 0.75em;
 }
+
+input:focus {
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+
 button {
   border: unset;
   color: #FFF;
@@ -53,7 +61,9 @@ button {
   padding: 1em 2em;
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
+  border-radius: 5px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .qrcode__container {
