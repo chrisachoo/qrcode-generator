@@ -41,7 +41,7 @@ const QrCode = () => {
                 <div className='input__group'>
                     <form onSubmit={downloadQRCode}>
                         <label>Enter URL</label>
-                        <input type='text' value={url} onChange={qrCodeEncoder} placeholder={`https://hackernoon.com`} />
+                        <input type='text' value={url} onChange={qrCodeEncoder} placeholder={`https://www.webiecode.com`} />
                         <button type='submit' disabled={!url}>Download QR code</button>
                     </form>
                 </div>
